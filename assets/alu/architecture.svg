@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Four-bit ALU architecture</title><desc id="desc">Inputs A and B feed logic, arithmetic, and comparison blocks. ALUControl selects the output. Zero and overflow flags are generated.</desc>
+<style>
+  .bg{fill:#12161b}.box{fill:#181d24;stroke:#52606f;stroke-width:3}.accent{fill:#8fd3ff}.text{fill:#f4f6f8;font-family:Arial,sans-serif}.muted{fill:#a9b1bc;font-family:Arial,sans-serif}.line{stroke:#8fd3ff;stroke-width:4;fill:none;marker-end:url(#arrow)}
+</style><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" class="accent"/></marker></defs>
+<rect width="1200" height="650" rx="28" class="bg"/>
+<text x="600" y="55" text-anchor="middle" font-size="32" font-weight="700" class="text">4-bit Combinational ALU</text>
+<rect x="55" y="125" width="180" height="90" rx="16" class="box"/><text x="145" y="162" text-anchor="middle" font-size="24" class="text">A[3:0]</text><text x="145" y="193" text-anchor="middle" font-size="17" class="muted">switches 3:0</text>
+<rect x="55" y="280" width="180" height="90" rx="16" class="box"/><text x="145" y="317" text-anchor="middle" font-size="24" class="text">B[3:0]</text><text x="145" y="348" text-anchor="middle" font-size="17" class="muted">switches 7:4</text>
+<rect x="55" y="455" width="180" height="90" rx="16" class="box"/><text x="145" y="492" text-anchor="middle" font-size="22" class="text">ALUControl</text><text x="145" y="523" text-anchor="middle" font-size="17" class="muted">switches 15:13</text>
+<rect x="365" y="95" width="330" height="400" rx="24" class="box"/>
+<text x="530" y="140" text-anchor="middle" font-size="27" font-weight="700" class="text">Operation Logic</text>
+<text x="415" y="200" font-size="23" class="text">000</text><text x="500" y="200" font-size="23" class="muted">A AND B</text>
+<text x="415" y="250" font-size="23" class="text">001</text><text x="500" y="250" font-size="23" class="muted">A OR B</text>
+<text x="415" y="300" font-size="23" class="text">010</text><text x="500" y="300" font-size="23" class="muted">A + B</text>
+<text x="415" y="350" font-size="23" class="text">110</text><text x="500" y="350" font-size="23" class="muted">A - B</text>
+<text x="415" y="400" font-size="23" class="text">111</text><text x="500" y="400" font-size="23" class="muted">signed A &lt; B</text>
+<rect x="810" y="125" width="280" height="100" rx="18" class="box"/><text x="950" y="166" text-anchor="middle" font-size="25" class="text">Y[3:0]</text><text x="950" y="198" text-anchor="middle" font-size="17" class="muted">LEDs 3:0</text>
+<rect x="810" y="285" width="280" height="90" rx="18" class="box"/><text x="950" y="323" text-anchor="middle" font-size="23" class="text">Zero Flag</text><text x="950" y="350" text-anchor="middle" font-size="17" class="muted">LED 14</text>
+<rect x="810" y="430" width="280" height="90" rx="18" class="box"/><text x="950" y="468" text-anchor="middle" font-size="23" class="text">Overflow Flag</text><text x="950" y="495" text-anchor="middle" font-size="17" class="muted">LED 15</text>
+<path d="M235 170 H365" class="line"/><path d="M235 325 H365" class="line"/><path d="M235 500 H330 V445 H365" class="line"/>
+<path d="M695 175 H810" class="line"/><path d="M695 325 H810" class="line"/><path d="M695 455 H810" class="line"/>
+<text x="600" y="590" text-anchor="middle" font-size="20" class="muted">Purely combinational design · testbench verification · Vivado synthesis and bitstream generation</text>
+</svg>
